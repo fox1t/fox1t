@@ -40,6 +40,13 @@
 
         {% include projects.html %}
 
+        {% include contributions.html %}
+
+        {% if site.data.talks %}
+          {% include talks.html %}
+        {% endif %}
+        
+
         {% if site.topics %}
           {% include interests.html %}
         {% endif %}
