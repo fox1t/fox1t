@@ -38,18 +38,22 @@
           </div>
         {% endunless %}
 
+        {% if site.topics %}
+          {% include interests.html %}
+        {% endif %}
+        
         {% include projects.html %}
 
-        {% include contributions.html %}
+        {% if site.orgs %}
+          {% include orgs.html %}
+        {% endif %}
 
+        {% include contributions.html %}
+        
         {% if site.data.talks %}
           {% include talks.html %}
         {% endif %}
         
-
-        {% if site.topics %}
-          {% include interests.html %}
-        {% endif %}
 
         {% unless posts_total == 0 %}
           {% include thoughts.html %}

@@ -1,3 +1,8 @@
+- name: Building HospitalRun the Fastify Way!
+  event: Interview
+  location: World
+  web_url: https://www.nearform.com/blog/tech-stack-talks-building-hospitalrun-the-fastify-way/
+  image_url: https://www.nearform.com/wp-content/uploads/2019/10/HospitalRun1.png
 - name: Infrastructure as code Kubernetes on ACS
   event: Global Azure Bootcamp
   location: Pordenone

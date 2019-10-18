@@ -9,15 +9,14 @@ plugins:
 permalink: /:year/:month/:day/:title/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
       layout: "post"
 
 projects:
-  sort_by: pushed
+  sort_by: stars
   # sort_by options:
   #   - pushed
   #   - stars
@@ -36,7 +35,7 @@ social_media:
   twitter: maksimsinik
   linkedin: maksimsinik
   keybase: fox1t
-  website: https://maksim.dev
+  # website: https://maksim.dev
   # medium: your_username
   # stackoverflow: your_user_id
   # telegram: your_username
@@ -56,7 +55,7 @@ topics:
   - name: Node.js
     web_url: https://github.com/topics/nodejs
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
-  
+
   - name: JavaScript
     web_url: https://github.com/topics/javascript
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png
@@ -64,8 +63,45 @@ topics:
   - name: TypeScript
     web_url: https://github.com/topics/typescript
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png
-  
+
   - name: MongoDB
     web_url: https://github.com/topics/mongodb
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png
 
+  - name: C
+    web_url: https://github.com/topics/c
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/c/c.png
+
+  - name: Azure
+    web_url: https://github.com/topics/azure
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/azure/azure.png
+
+  - name: Python
+    web_url: https://github.com/topics/python
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
+
+orgs:
+  - login: "HospitalRun"
+    description: "Open source, modern software for charitable hospitals in the developing world."
+    html_url: "https://github.com/HospitalRun"
+    avatar_url: "https://avatars1.githubusercontent.com/u/6797041?v=4"
+
+repositories:
+  - html_url: https://github.com/HospitalRun/hospitalrun-frontend
+    name: hospitalrun-frontend
+    description: Frontend for HospitalRun
+    language: TypeScript
+    stargazers_count: 4790
+    forks_count: 1462
+  - html_url: https://github.com/HospitalRun/hospitalrun-server
+    name: hospitalrun-server
+    description: Backend for HospitalRun
+    language: TypeScript
+    stargazers_count: 562
+    forks_count: 261
+  - html_url: https://github.com/HospitalRun/hospitalrun
+    name: hospitalrun
+    description: Monorepo that holds all of HospitalRun's v2 projects
+    language: JavaScript
+    stargazers_count: 39
+    forks_count: 3
