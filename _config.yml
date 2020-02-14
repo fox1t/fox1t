@@ -91,17 +91,17 @@ repositories:
     name: hospitalrun-frontend
     description: Frontend for HospitalRun
     language: TypeScript
-    stargazers_count: 4790
-    forks_count: 1462
+    stargazers_count: 4954
+    forks_count: 1493
   - html_url: https://github.com/HospitalRun/hospitalrun-server
     name: hospitalrun-server
     description: Backend for HospitalRun
     language: TypeScript
-    stargazers_count: 562
-    forks_count: 261
+    stargazers_count: 593
+    forks_count: 275
   - html_url: https://github.com/HospitalRun/hospitalrun
     name: hospitalrun
     description: Monorepo that holds all of HospitalRun's v2 projects
     language: JavaScript
-    stargazers_count: 39
-    forks_count: 3
+    stargazers_count: 108
+    forks_count: 31
