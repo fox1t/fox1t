@@ -20,11 +20,12 @@ projects:
   # sort_by options:
   #   - pushed
   #   - stars
-  limit: 9
+  limit: 5
   exclude:
     forks: false
     projects:
-    # - repo-name
+    - tsconfig
+    - storagecoach
 
 social_media:
   # behance: your_username
@@ -48,13 +49,13 @@ topics:
     web_url: https://github.com/topics/kubernetes
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/kubernetes/kubernetes.png
 
-  - name: Docker
-    web_url: https://github.com/topics/docker
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png
-
   - name: Node.js
     web_url: https://github.com/topics/nodejs
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
+
+  - name: Fastify
+    web_url: https://github.com/topics/fastify
+    image_url: https://raw.githubusercontent.com/github/explore/d236cc6153f7ab3e68694234be43003b74cfe151/topics/fastify/fastify.png
 
   - name: JavaScript
     web_url: https://github.com/topics/javascript
@@ -79,6 +80,14 @@ topics:
   #   image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
 
 orgs:
+  - login: "Fastify"
+    description: "Fast and low overhead web framework, for Node.js"
+    html_url: "https://fastify.io"
+    avatar_url: "https://avatars.githubusercontent.com/u/24939410?s=200&v=4"
+  - login: "Ducktors"
+    description: "We are a collective of OSS contributors."
+    html_url: "https://ducktors.dev"
+    avatar_url: "https://avatars.githubusercontent.com/u/113586635?s=96&v=4"
   - login: "HospitalRun"
     description: "Open source, modern software for charitable hospitals in the developing world."
     html_url: "https://hospitalrun.io"
@@ -89,17 +98,23 @@ repositories:
     name: hospitalrun-frontend
     description: Frontend for HospitalRun
     language: TypeScript
-    stargazers_count: 4954
-    forks_count: 1493
+    stargazers_count: 6700
+    forks_count: 2200
   - html_url: https://github.com/HospitalRun/hospitalrun-server
     name: hospitalrun-server
     description: Backend for HospitalRun
     language: TypeScript
-    stargazers_count: 593
-    forks_count: 275
+    stargazers_count: 853
+    forks_count: 598
   - html_url: https://github.com/HospitalRun/hospitalrun
     name: hospitalrun
     description: Monorepo that holds all of HospitalRun's v2 projects
     language: JavaScript
-    stargazers_count: 108
-    forks_count: 31
+    stargazers_count: 842
+    forks_count: 285
+  - html_url: https://github.com/ducktors/turborepo-remote-cache
+    name: turborepo-remote-cache
+    description: Open source implementation of the Turborepo custom remote cache server.
+    language: TypeScript
+    stargazers_count: 543
+    forks_count: 57
