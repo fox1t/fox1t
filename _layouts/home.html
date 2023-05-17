@@ -30,7 +30,7 @@
       {% include masthead.html metadata=true %}
       {% include contributions.html %}
       
-      <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Organizations</h2>
+      <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>OSS Organizations</h2>
       <div class="flex-wrap gutter-condensed">
         {% for org in site.orgs  %}
             <div >
@@ -38,7 +38,7 @@
             </div>
         {% endfor %}
       </div>
-      
+
     </div>
 
     <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
@@ -48,7 +48,10 @@
             {{ content }}
           </div>
         {% endunless %}
-
+        
+        {% if site.data.books %}
+        {% include books.html %}
+      {% endif %}
         
         {% if site.topics %}
         {% include interests.html %}
