@@ -1,6 +1,6 @@
 <div class="d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
     <div class="d-flex flex-justify-between flex-items-start">
-      <a target="_blank" href="{{ book.web_url   }}">
+      <a target="_blank" href="{{ book.web_url   }}" class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
         <img
         src="{{ book.image_url }}"
         width="200"
@@ -8,7 +8,7 @@
         class="rounded-1"
         alt="{{ book.login }}"
       />
-      <div class="ml-3">
+      <div class="col-9 col-sm-12">
         <h1 class="f2 mb-1 mt-1">
             {{ book.name }}
           </a>
