@@ -1,15 +1,19 @@
 <div class="d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
-    <div class="d-flex flex-justify-between flex-items-start">
-      <a target="_blank" href="{{ book.web_url   }}" class="col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4">
-        <img
-        src="{{ book.image_url }}"
-        width="200"
-        height="246.923"
-        class="rounded-1"
-        alt="{{ book.login }}"
-      />
-      </a>
-      <div class="col-12 pl-2">
+    <div class="d-flex flex-wrap gutter-condensed">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+        <div class="flex-justify-center">
+          <a target="_blank" href="{{ book.web_url   }}">
+            <img
+            class="width-full"
+            src="{{ book.image_url }}"
+            
+            class="rounded-1"
+            alt="{{ book.login }}"
+          />
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
         <h1 class="f2 mb-1 mt-1">
             {{ book.name }}
         </h1>
